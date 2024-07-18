@@ -1,0 +1,215 @@
+:root {
+    --primary: #683b2b;
+    --bgDark: rgb(12, 12, 12);
+    --beige : #bc8f62;
+    --secondary: #000000;
+    --bgLight: rgb(190, 181, 181);  
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    background-color:  #efc59b;
+  }  
+  header nav .left {
+    color: var(--beige);
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease;  
+  }
+  header nav .left a:hover {   /*home and other tabs*/
+    color: var(--primary);
+  }
+   header nav {
+    padding: 2rem 0;
+  }
+  header nav .logo {
+    margin-right: 3rem;
+  }  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  .container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin:  auto;
+  }
+  .main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .main .left img {
+    width: 400px;
+    height: 500px;
+    margin: 70px;
+  }
+  .main .right {
+    color:  #2A3132;
+    margin-top: -7rem;
+  }
+ .main .right h6 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 3px;  /*Er.Shubham Rane Properties*/
+  }
+  .main .right h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  .main .right h1 span {
+    color: var(--primary);  /*Engineer Color*/
+  }
+  .main .right p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  section {
+    padding: 1rem;
+    background-color: #e0a366;
+  }
+  section.about h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  section.about h1 span {
+    color: var(--primary); /*color for About "me"*/
+  }
+  
+  section.about h3 {    /*hello! I m shubham rane*/
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #000000;
+  }
+  section.about p {   /*main content*/
+    font-family: "Lato", sans-serif;
+    color: var(--secondary);
+    line-height: 30px;
+    margin-bottom: 2rem;
+  }
+  section.about .socials {
+    display: flex;
+  }
+  section.about .socials  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    margin-right: 0.8rem;
+    border-radius: 50%;
+  }
+  section.about .socials a:hover {
+    background: var(--primary);
+  }
+
+  section.services {
+    background: #763626;
+  }
+
+  .services-head {  /*main content,services in line */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 0.5rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+  }
+  .services-head + p {
+    color: rgb(0, 0, 0);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 800px;
+  } 
+  section.services .card-grid {    /*services in column*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /*fractional unit*/
+    column-gap: 2rem;
+  }
+  section.services .card-grid .card {
+    background: #763626;
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.8s ease;
+  }
+  section.services .card-grid .card img {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var();
+  } 
+ section.services .card-grid .card h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  } 
+  section.services .card-grid .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--seconday);
+    line-height: 1.6;
+  }*/
+  section.services .card-grid .card:hover {    /*card hover effect*/
+    background: #AF8F6F;
+    background-color: #000000;
+  } 
+  section.services .card-grid .card:hover h2 {     /*card hover effect*/
+    color: #AF8F6F;  
+  }
+  section.services .card-grid .card:hover p {     /*card hover effect*/
+    color: #AF8F6F;
+  }
+  
+  .flex {           /*contact,main content, about me in center*/
+    display: flex;
+  }
+  .items-centre {     /*contact,main content, about me in center*/
+    align-items: center;
+  }
+  .justify-between {    /*contact,main content, about me in center*/
+    justify-content: space-between;
+  }
+  .justify-center {       /*contact,main content, about me in center*/
+    justify-content: center;
+  }
+  .justify-right {      /*contact,main content, about me in center*/
+    justify-content: right;
+  }
+  .btn {         /*download cv*/
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    cursor: pointer;  /*cursor becomes finger*/
+    transition: all 0.5s ease;
+  }
+  .btn-primary {
+    background-color: #763626;
+    color: var(--secondary);
+    margin-top: -15rem;
+  }
+  .btn-primary:hover {   /*contact button hover effect*/
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .btn-secondary {      /*download cv color effect*/
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+  .btn-secondary:hover {        /*download cv hover effect*/
+    background: var(--primary);
+    color: var(--secondary);
+  }
